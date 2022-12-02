@@ -1,0 +1,72 @@
+.resourceType {
+	@include applyPadding;
+	display: flex;
+	justify-content: space-between;
+	margin: 1.25rem auto;
+	width: 100%;
+
+	button {
+		background-color: $secondary-font-color;
+		border: 0.125rem solid $primary-bg-color;
+		border-radius: 1.25rem;
+		color: $primary-font-color;
+		font-weight: bold;
+		padding: 0.3125rem;
+		width: 10%;
+		min-width: 130px;
+	}
+}
+
+.resourceItemsDisplay {
+	@include applyPadding;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-row-gap: 1.25rem;
+	margin-bottom: 1.25rem;
+
+	.resourceItem {
+		background-color: $secondary-font-color;
+		border-top: 0.125rem solid $primary-font-color;
+		border-left: 0.125rem solid $primary-font-color;
+		border-radius: 1.25rem 0;
+		display: flex;
+		filter: drop-shadow(0 0.625rem 0.25rem rgba(0, 0, 0, 0.4));
+		flex-direction: column;
+		width: 20rem;
+		height: 27.5rem;
+
+		img {
+			margin: 0.625rem auto auto auto;
+			max-width: 95%;
+			height: 50%;
+		}
+
+		.details {
+			background-color: $tertiary-color;
+			border-radius: 0 0 1.25rem 0;
+			display: flex;
+			flex-direction: column;
+			padding: 0.625rem;
+			height: 70%;
+
+			h1 {
+				font-size: 1.25rem;
+				font-weight: bold;
+				margin: 0 auto 0.625rem 0;
+			}
+
+			a {
+				border: 0.125rem solid $accent-color;
+				border-radius: 1.25rem;
+				color: $accent-color;
+				margin: auto auto 0 0;
+				padding: 0.3125rem 1.25rem;
+
+				&:hover {
+					background-color: $accent-color;
+					color: $secondary-font-color;
+				}
+			}
+		}
+	}
+}

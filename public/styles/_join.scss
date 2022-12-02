@@ -1,0 +1,48 @@
+.joinHead {
+	margin: 1.25rem auto;
+}
+
+.warning {
+	margin: 0 auto 1.25rem auto;
+}
+
+.joinForm {
+	.doubleInput {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		div {
+			width: 45%;
+		}
+	}
+
+	select {
+		background: none;
+		border-top: none;
+		border-right: none;
+		border-bottom: 0.125rem solid $primary-font-color;
+		border-left: none;
+	}
+
+	.religiousOptions {
+		column-gap: 1.25rem;
+		display: grid;
+		grid-template-columns: auto auto;
+
+		div {
+			background-color: $primary-bg-color;
+			display: flex;
+			flex-direction: row;
+			padding: 0.625rem 0.3125rem;
+
+			input {
+				margin: auto 1.25rem auto 0;
+			}
+
+			label {
+				margin: auto auto auto 0;
+			}
+		}
+	}
+}

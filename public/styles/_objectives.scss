@@ -1,0 +1,32 @@
+.objectivesDisplay {
+	display: inline-grid;
+	gap: auto;
+	grid-template-columns: auto auto auto;
+	margin: auto;
+	padding: 0 2.5rem;
+	width: calc(100% - 5rem);
+	min-height: 60vh;
+
+	div {
+		background-color: $secondary-font-color;
+		border-top: 0.125rem solid $primary-font-color;
+		border-left: 0.125rem solid $primary-font-color;
+		border-radius: 1.25rem 0 1.25rem 0;
+		display: flex;
+		filter: drop-shadow(0.625rem 0.625rem 0.25rem rgba(0, 0, 0, 0.25));
+		flex-direction: column;
+		margin: auto;
+		padding: 0.625rem;
+		width: 25vw;
+		min-width: 350px;
+		min-height: 250px;
+
+		h1 {
+			color: $primary-font-color;
+			font-size: 1.25rem;
+			text-align: center;
+			text-decoration: underline;
+			margin: 0 auto 1.25rem;
+		}
+	}
+}

@@ -1,0 +1,161 @@
+.homeHeader {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(/images/ask-meet-1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8rem;
+	position: relative;
+	height: 50vh;
+
+	.headerIntro {
+		color: $secondary-font-color;
+		margin: auto;
+		text-align: center;
+
+		h1 {
+			font-size: 2.5rem;
+			margin: 0 0 1.25rem 0;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			margin: 0 0 1.25rem 0;
+		}
+
+		a {
+			border: 0.125rem solid $secondary-font-color;
+			border-radius: 1.25rem;
+			color: inherit;
+			display: none;
+			font-size: 1.25rem;
+			padding: 0.3125rem 0.625rem;
+			text-decoration: none;
+
+			&:hover {
+				background-color: $secondary-font-color;
+				color: $primary-font-color;
+			}
+		}
+	}
+
+	.headerTags {
+		@include applyPadding;
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		width: 100%;
+		height: 12.5rem;
+
+		top: 80%;
+
+		div {
+			border-radius: 1.25rem;
+			display: flex;
+			filter: drop-shadow(0 0.625rem 0.25rem rgba(0, 0, 0, 0.4));
+			width: 25%;
+		}
+
+		.primaryTag {
+			background-color: $primary-bg-color;
+			color: $secondary-font-color;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+
+			p {
+				text-align: center;
+				margin: auto auto 0.625rem auto;
+			}
+
+			a {
+				border: 0.125rem solid $secondary-font-color;
+				border-radius: 1.25rem;
+				margin: 0 auto auto auto;
+				padding: 0.3125rem 0.625rem;
+
+				&:hover {
+					background-color: $secondary-font-color;
+					color: $primary-bg-color;
+				}
+			}
+		}
+
+		.secondaryTag {
+			background-color: $secondary-font-color;
+			margin: auto 0;
+			padding: 0.625rem;
+			height: 50%;
+
+			i {
+				margin: auto 1.25rem auto auto;
+			}
+
+			a {
+				margin: auto auto auto 0;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.homeInfo {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 1.25rem 0;
+
+	.homeInfoCover {
+		@include applyPadding;
+		display: flex;
+		justify-content: space-between;
+
+		.homeBio {
+			display: flex;
+			flex-direction: column;
+
+			p {
+				margin: 0;
+			}
+
+			.homeBtns {
+				display: flex;
+				flex-direction: column;
+				margin: 1.25rem auto auto 0;
+
+				a {
+					text-align: center;
+					text-decoration: none;
+
+					&:first-child {
+						background-color: $accent-color;
+						border: none;
+						border-radius: 1.25rem;
+						color: $secondary-font-color;
+						padding: 0.3125rem 0.625rem;
+					}
+
+					&:last-child {
+						border: none;
+						color: $primary-font-color;
+						margin-top: 1.25rem;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		.homeVideo {
+			width: 40rem;
+			height: 22.5rem;
+			min-width: 350px;
+			min-height: 196.875px;
+
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
